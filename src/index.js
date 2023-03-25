@@ -12,7 +12,7 @@ const setupAndStartServer=async ()=>{
     app.listen(PORT,()=>{
         //.dotenv helps to setup the environment files
         console.log(`Server Started at ${PORT}`);
-
+ 
         
     })
     

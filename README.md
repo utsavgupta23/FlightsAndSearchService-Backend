@@ -1,1 +1,7 @@
 -Migrations helps is to make incremental changes to the databases.It logs the changes.Whenever we run the migration we will be able to see the changes made to the databases.
+-If any body clones the project and run the migrations all changes will be applied to there db as well.
+-db:migrate command to run migrations
+-`Services` for buisness logic
+-`Controllers` to hit the api
+-`Respository` interact with repository layer and databases
+-`Models` how the tables/db looks like
