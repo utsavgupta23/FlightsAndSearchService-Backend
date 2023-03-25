@@ -1,0 +1,1 @@
+-Migrations helps is to make incremental changes to the databases.It logs the changes.Whenever we run the migration we will be able to see the changes made to the databases.
