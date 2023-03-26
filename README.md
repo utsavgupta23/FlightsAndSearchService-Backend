@@ -3,5 +3,7 @@
 -db:migrate command to run migrations
 -`Services` for buisness logic
 -`Controllers` to hit the api
--`Respository` interact with repository layer and databases
--`Models` how the tables/db looks like
+-`Respository` interact with any  data source (databases).
+-`Models` how the tables/db looks like. Index file in models folder gives acces to all   models in the form of db object which we have to destructure.
+-`Sequelize ` it is a orm we can write sql in simple terms.
+
