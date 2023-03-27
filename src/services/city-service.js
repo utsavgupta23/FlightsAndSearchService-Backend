@@ -1,11 +1,11 @@
-const {CityRepository}=require('../repository/index');
+const {Cityrepository}=require('../repository/index');
 
 
 
 class Cityservice {
     constructor()
     {
-       this.cityRepository=new CityRepository();
+       this.cityRepository=new Cityrepository();
     }
 
 
