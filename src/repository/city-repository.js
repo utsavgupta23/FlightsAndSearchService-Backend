@@ -27,7 +27,7 @@ class CityRepository{
        }
    }
 
-   async updateCity(cityId,data)
+   async updateCity(cityId,data) //data will be key value pair {name:Prayagraj}
    {
       try {
         
