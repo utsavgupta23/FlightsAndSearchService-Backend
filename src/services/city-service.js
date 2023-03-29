@@ -68,13 +68,13 @@ class Cityservice {
    }
 
 
-   async getAllcities()
+   async getAllcities(filter)
    {
 
       
     
     try {
-        const city=await this.cityRepository.getAllcities();
+        const city=await this.cityRepository.getAllcities({name: filter.name});
         return city;
         
     } catch (error) {
