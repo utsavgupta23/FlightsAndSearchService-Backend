@@ -2,7 +2,7 @@ const express=require('express');
 const bodyParser=require('body-parser');
 const {PORT}=require('./config/serverconfig');
 const Apiroutes=require('./routes/index');
-
+const {City,Airport}=require('./models/index');
 
 
 const setupAndStartServer=async ()=>{
@@ -11,8 +11,15 @@ const setupAndStartServer=async ()=>{
     app.use(bodyParser.urlencoded({extended:true}));
 
     app.use('/api',Apiroutes);
-    app.listen(PORT,()=>{
+    app.listen(PORT,async ()=>{
         //.dotenv helps to setup the environment files
+
+        const result=await Airport.findAll({
+            where:{
+                cityId:9
+            }
+        });
+        console.log(result);
         console.log(`Server Started at ${PORT}`);
  
         
