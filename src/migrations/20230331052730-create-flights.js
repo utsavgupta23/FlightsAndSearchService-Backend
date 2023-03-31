@@ -26,10 +26,6 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull:false
       },
-      arrivalAirportId: {
-        type: Sequelize.INTEGER,
-        allowNull:false
-      },
       arrivalTime: {
         type: Sequelize.DATE,
         allowNull:false
@@ -47,7 +43,7 @@ module.exports = {
       },
       totalSeats: {
         type: Sequelize.INTEGER ,
-        allowNull:false 
+        allowNull:false
       },
       createdAt: {
         allowNull: false,

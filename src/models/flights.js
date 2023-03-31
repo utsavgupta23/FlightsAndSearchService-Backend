@@ -27,10 +27,10 @@ module.exports = (sequelize, DataTypes) => {
       type:DataTypes.INTEGER,
       allowNull:false,
     },
-    arrivalAirportId:{
-      type:DataTypes.INTEGER,
-      allowNull:false,
-    },
+    // arrivalAirportId:{
+    //   type:DataTypes.INTEGER,
+    //   allowNull:false,
+    // },
     arrivalAirportId:{
       type:DataTypes.INTEGER,
       allowNull:false,
@@ -49,7 +49,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     boardingGate:{
       type:DataTypes.STRING,
-      allowNull:false,
+      allowNull:true,
     },
     totalSeats: {
       type:DataTypes.INTEGER,
