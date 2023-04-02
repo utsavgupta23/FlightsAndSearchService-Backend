@@ -20,6 +20,20 @@ class FlightService
         }
        
     }
+
+
+    async getAllFlights(data)
+    {
+        try{
+            console.log('FJF');
+            const flights=await  this.flightRepository.getAllFlights(data);
+            return flights;
+        }
+        catch(error){
+            console.log('Something went wrong in Flightrepository layer');
+            throw {error};
+        }
+    }
 }
 
 
