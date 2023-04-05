@@ -1,29 +1,15 @@
-const {Cityrepository, Airportrepository}=require('../repository/index');
+const CrudService=require('./crud-service');
+const {Airportrepository}=require('../repository/index');
 
 
-
-class AirportService
+class AirportService extends CrudService
 {
     constructor()
     {
-          this.airportrepository=new Airportrepository();
+          const airportrepository=new Airportrepository();
+          super(airportrepository);
     }
-    
 
-    async createAirport(data)
-    {
- 
-     try {
-         
-          const airport=await this.airportrepository.createAirport(data);
-          return airport;
-        
-         
-     } catch (error) {
-         console.log("Something went wrong at service layer");
-         throw {error};
-     }
-    }
 
 }
 

@@ -6,7 +6,7 @@ const router=express.Router();
 
 router.post('/city',CityController.create);
 router.post('/flight',FlightController.create);
-router.post('/airport',AirportController.create);
+router.post('/airports',AirportController.create);
 router.delete('/city/:id',CityController.destroy);
 router.get('/city/:id',CityController.get);
 router.get('/city',CityController.getAll);

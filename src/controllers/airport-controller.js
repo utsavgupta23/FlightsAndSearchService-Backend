@@ -7,7 +7,7 @@ const create= async (req,res)=>{
    
     try {
         
-        const airport=await AirportService.createAirport(req.body);
+        const airport=await AirportService.create(req.body);
        
         return res.status(201).json({
             data:airport,
